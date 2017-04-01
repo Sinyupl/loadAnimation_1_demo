@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /*background-color: rgba(0,0,0,0.2);*/
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-items: center; }
+  .cover .loadFrame {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .cover .loadFrame .loadAnimate {
+      width: 80%;
+      height: 80%;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      display: block;
+      background-color: #CCFF99;
+      margin: 0 auto;
+      text-align: center;
+      border-radius: 50%;
+      -webkit-animation: load 2s ease-out infinite;
+      animation: load 2s ease-out infinite; }
+    .cover .loadFrame .text {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+      padding-bottom: 80%;
+      border-radius: 50%;
+      height: auto;
+      top: 10%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      background-color: #CCFF99; }
+      .cover .loadFrame .text p {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-size: 3em;
+        color: #99CC00;
+        height: 100%; }
+        .cover .loadFrame .text p span {
+          width: 100%; }
+
+@-webkit-keyframes load {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2); } }
+@keyframes load {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(2);
+    transform: scale(2); } }
+
+/*# sourceMappingURL=style.css.map */
